@@ -1,0 +1,25 @@
+{
+  "name": "page_design",
+  "version": "1.0.0",
+  "description": "\"My first Page Design\"",
+  "main": "script.js",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Training_Project"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "jquery"
+  ],
+  "author": "Harpreet",
+  "license": "ISC"
+}

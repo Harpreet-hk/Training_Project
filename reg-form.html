@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <style>
+            .columns{
+                background-color: lightpink;
+                width: 40%;
+                height: auto;
+                margin: 0 auto;
+                margin-top: 10px;
+                border: 2px solid #e7a0ab;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="columns is-mobile">
+            <div class="column">
+                <h2 class="has-text-centered is-size-2 is-size-6-mobile has-text-weight-bold">Registration Form</h2>
+                <form class="pure-form" action="" method="GET" id="myForm" onsubmit="showSuccessMessage()">
+                    <div class="field">
+                        <label class="label">Firstname</label>
+                        <div class="control"><input id="firstname" class="input" type="text" required placeholder="Text input"></div>
+                        <label class="label">Lastname</label>
+                        <div class="control"><input id="lastname" class="input" type="text" required placeholder="Text input"></div>
+                        <label class="label">Age</label>
+                        <div class="control"><input id="age" class="input" type="number" min="1" max="120" required placeholder="Enter between 1-120"></div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="email" class="input" type="email" required placeholder="Email input">
+                            <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                            <span class="icon is-small is-right"><i class="fas fa-exclamation-triangle"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Hobbies</label>
+                        <div class="control">
+                            <label class="checkbox"><input type="checkbox" id="hobbies" value="Football">Football</label><br>
+                            <label class="checkbox"><input type="checkbox" id="hobbies" value="Cricket">Cricket</label><br>
+                            <label class="checkbox"><input type="checkbox" id="hobbies" value="Basketball">Basketball</label><br>
+                            <label class="checkbox"><input type="checkbox" id="hobbies" value="Volleyball">Volleyball</label><br>
+                            <label class="checkbox"><input type="checkbox" id="hobbies" value="Reading books">Reading books</label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Gender</label>
+                        <div class="control">
+                            <label class="radio"><input id="gender" type="radio" value="gender_female" name="question">Female</label>
+                            <label class="radio"><input id="gender" type="radio" value="gender_male" name="question">Male</label>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control"><button type="submit" class="button is-primary">Submit</button></div>
+                        <div class="control"><button class="button is-danger">Cancel</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+     function showSuccessMessage(){
+        alert('Thank You!');
+
+        var info = {
+            firstname: document.getElementById('firstname').value,
+            lastname: document.getElementById('lastname').value,
+            age: document.getElementById('age').value,
+            email: document.getElementById('email').value,
+            gender: document.getElementById('gender').value
+        };
+        for( var i in info)
+        {
+            console.log(i , info[i]);
+        }
+        document.write("Name: " + firstname.value + " " + lastname.value + "<br>" +  "Age: " + age.value + "<br>" + "Email: " + email.value + "<br>" + "Gender: " + gender.value);
+    }
+</script>

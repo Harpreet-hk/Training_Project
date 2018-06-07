@@ -1,0 +1,415 @@
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: auto;
+    padding: 12px;
+}
+    .has-bg-img {
+    background: url('./../images/1.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    }
+    .hero-head{
+        padding: 2%;
+        padding-bottom: 0px;
+    }
+    .hero-body{
+        position: relative;
+    }
+    .name{
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 0.97;
+        letter-spacing: 6px;
+        padding-left: 1%;
+        vertical-align: top;
+    }
+    .app-name{
+        background-color: #6e45e2;
+        width: 71%;
+        height: 1%;
+      }
+      .main-line{
+        display: inline-flex;
+        margin-bottom: 2.5%;
+        font-size: 86px;
+      }
+      .title:not(.is-spaced)+.subtitle {
+        margin-top: 0rem;
+    }
+    .underline{
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+    .menu-list{
+        width: 70%;
+        float: right;
+    }
+    ul{
+        display: inline-flex;
+    }
+    .menu-list a{
+        border-radius: 25px;
+    }
+    .menu-list ul li{
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .button{
+        background-color: #72B9D2;
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        text-align: center;
+    }
+    .benefit{
+        background: url('./../images/background.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        position: relative;
+    }
+    .main-line1{
+        line-height: 2.29;
+        letter-spacing: 0.7px;
+        color: #9fa4af;
+        font-size: 14px;
+    }
+    .main-line2{
+        font-size: 60px;
+        color: #4f4f6f;
+    }
+    .data{
+        color: #9fa4af;
+    }
+    .col2{
+        padding-left: 161px;
+        padding-top: 94px;
+    }
+    .what-we-believe{
+        padding-bottom: 5%;
+        position: relative;
+    }
+    .column.is-one-quarter, .column.is-one-quarter-tablet {
+        width: 24%;
+    }
+    .believe{
+        float: right;
+        margin: right;
+        padding-top: 250px;
+        max-width: 550px;
+    }
+    .slider-section{
+        background: url('./../images/bg.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding-top: 5%;
+    }
+    .value{
+        float: right;
+    }
+    .team-members{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .columns{
+        /* padding: 5%; */
+        padding-bottom: 0px;
+    }
+    .column{
+        padding: 15px;
+    }
+    .team-member-pic{
+        width: 100%;
+    }
+    .control-data-section{
+        background: url('./../images/16.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding-top: 5%;
+    }
+    .control{
+        padding-bottom: 8%;
+    }
+    .graphic-pic{
+        padding-left: 13%;
+        width: 100%;
+    }
+    .button1{
+        background-color: #6e45e2;
+        border: solid 1px #d7dbe8;
+    }
+    .button2{
+        box-shadow: 0 0 18.7px 2.3px rgba(204, 204, 223, 0.5);
+        background-color: #ffffff;
+        border: solid 1px #d7dbe8
+    }
+    .footer-bottom{
+        padding-top: 2%;
+        color: rgba(106, 106, 119, 0.5);
+    }
+    .fa-facebook-f, .fa-twitter, .fa-google-plus-g, .fa-instagram{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    a{
+        color: rgba(106, 106, 119, 0.5);
+    }
+    .downward-arrow{
+        border-radius: 50%;
+        background: white;
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        bottom: 8%;
+        right: 50%;
+        box-shadow: 0 0 18.7px 2.3px rgba(204, 204, 223, 0.5)
+    }
+    .downward-arrow1{
+        border-radius: 50%;
+        background: #6e45e2;
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        bottom: 8%;
+        right: 50%;
+    }
+    .fa-arrow-down{
+        color: #9fa4af;
+        height: 16px;
+        width: 14px;
+        position: absolute;
+        left: 26px;
+        top: 26px;
+    }
+    .icon-box{
+        font-size: 24px;
+    }
+    .round-dots{
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+    .dot{
+        border-radius: 50%;
+        background-color: white;
+        width: 8px;
+        height: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        opacity: 0.5;
+        padding-left: 4px;
+    }
+    .dot1{
+        border-radius: 50%;
+        background-color: white;
+        width: 8px;
+        height: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        padding-left: 4px;
+    }
+    .sponsorship{
+        width: 100%;
+        padding-top: 108px;
+        mix-blend-mode: overlay;
+        background-color: rgba(0,0,0,0.2);
+        padding-bottom: 108px;
+    }
+    .golden-grid{
+        padding-right: 5%;
+        object-fit: contain;
+        width: 224px;
+        height: 14px;
+    }
+    .ostrich-cafe{
+        padding-right: 5%;
+        max-width: 196px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .hover-logo-sweety{
+        padding-right: 5%;
+        max-width: 216px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .wall-paint-shop{
+        padding-right: 5%;
+        max-width: 162px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .ice-cream-bar{
+        padding-right: 5%;
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .frame{
+        padding-right: 5%;
+        max-width: 236px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .border{
+        border-right: 1px solid rgba(255,255,255,0.4);
+    }
+    .navbar{
+        background-color: transparent;
+    }
+    .navbar-item{
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 0.97;
+        letter-spacing: 6px;
+    }
+    .menu-items{
+        padding-right: 50px;
+    }
+    .media{
+        width: 67%;
+        padding: 5%;
+        color: white;
+    }
+
+
+/*For Screen width (768px - 1024px)*/
+@media screen and (max-width: 1024px) and (min-width: 768px)
+{
+    .downward-arrow, .downward-arrow1{
+        width: 20px;
+        height: 20px;
+        bottom: 4%;
+    }
+    .fa-arrow-down{
+        left: 4px;
+        top: 4px;
+    }
+}
+
+/*For Screen max-width 787px*/
+@media screen and (max-width: 767px)
+{
+    .title:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    .downward-arrow{
+        width: 20px;
+        height: 20px;
+        bottom: 8%;
+        right: 50%;
+    }
+    .downward-arrow1{
+        width: 20px;
+        height: 20px;
+        bottom: 8%;
+        right: 50%;
+    }
+    .fa-arrow-down{
+        left: 3px;
+        top: 2px;
+    }
+    .button{
+        width: 124px;
+        height: 27px;
+    }
+    .graphic{
+        width: 60%;
+    }
+    .media{
+        width: 100%;
+    }
+    .border{
+        border-right: none;
+    }
+    .round-dots {
+        padding-top: 0px;
+        padding-bottom: 26px;
+    }
+    .sponsorship{
+        padding-top: 37px;
+        padding-bottom: 41px;
+    }
+    .golden-grid{
+        padding-right: 5%;
+        object-fit: contain;
+        width: 50px;
+        height: 14px;
+    }
+    .ostrich-cafe{
+        padding-right: 5%;
+        max-width: 50px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .hover-logo-sweety{
+        padding-right: 5%;
+        max-width: 50px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .wall-paint-shop{
+        padding-right: 5%;
+        max-width: 50px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .ice-cream-bar{
+        padding-right: 5%;
+        max-width: 50px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .frame{
+        padding-right: 5%;
+        max-width: 50px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .dot{
+        width: 5px;
+        height: 5px;
+    }
+    .dot1{
+        width: 5px;
+        height: 5px;
+    }
+    .column.is-one-quarter, .column.is-one-quarter-tablet {
+        width: 100%;
+    }
+    .button{
+     font-size: 12px;
+    }
+    .footer{
+        padding: 10px;
+    }
+    .copyright{
+        font-size: 8px;
+    }
+    .social-networking-sites{
+        font-size: 8px;
+    }
+    .benefit .container{
+        padding: 12px;
+    }
+    
+}
+    

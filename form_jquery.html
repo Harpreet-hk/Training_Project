@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jquery Form</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- <link rel='stylesheet' href='node_modules/jquery'>
+    <script src='node_modules/jquery/dist/jquery.min.js'></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+   
+    <style>
+        .columns{
+            background-color: rgb(238, 191, 170);
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .x{
+            display: inline-flex;
+        }
+        .label{
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="columns is-mobile">
+        <div class="column">
+            <h3 class="has-text-centered has-text-weight-bold">FORM</h3>
+            <form action="#" method="GET" id="form">
+
+                <div class="x field">
+                    <label class="label">Firstname</label>
+                    <div class="control"><input id="firstname" class="input" type="text" required placeholder="Text input"></div>
+                </div>
+                <div class="x field">
+                    <label class="label">Lastname</label>
+                    <div class="control"><input id="laststname" class="input" type="text" required placeholder="Text input"></div>
+                </div>
+                <div class="x field">
+                    <label class="label">Contact No.</label>
+                    <div class="control"><input id="contact_no" class="input" type="tel" maxlength="10" required placeholder="Enter Contact No"></div>
+                </div>
+                <div class="x field">
+                    <label class="label">Date of Birth</label>
+                    <div class="control"><input id="dob" class="input" type="date" required placeholder="Text input"></div>
+                </div>
+                <div class="x field">
+                    <label class="label"><i class="fas fa-envelope"></i>&nbsp;Email</label>
+                    <div class="control"><input id="email" class="input" type="email" required placeholder="Email input"></div>
+                </div>
+                <div class="x field">
+                    <label class="label">Address</label>
+                    <div class="control"><input id="address" class="input" type="text" required placeholder="Address input"></div>
+                </div>
+
+                <div class="field">
+                        <label class="label">Gender</label>
+                        <div class="control">
+                            <label class="radio"><input id="gender_male" type="radio" value="male" name="gender">Male</label>
+                            <label class="radio"><input id="gender_female" type="radio" value="female" name="gender">Female</label>
+                            <label class="radio"><input id="gender_others" type="radio" value="others" name="gender">Others</label>
+                        </div>
+                </div>
+
+                <div class="field">
+                        <label class="label">Blood Group</label>
+                        <select id="bg" required>
+                                <option>--Select Blood Group--</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+                </div>
+
+                <div class="field">
+                    <label class="label">Hobbies</label>
+                    <div class="control">
+                        <label class="checkbox"><input type="checkbox" id="hobbie1" value="Football">Football</label><br>
+                        <label class="checkbox"><input type="checkbox" id="hobbie2" value="Cricket">Cricket</label><br>
+                        <label class="checkbox"><input type="checkbox" id="hobbie3" value="Basketball">Basketball</label><br>
+                        <label class="checkbox"><input type="checkbox" id="hobbie4" value="Volleyball">Volleyball</label><br>
+                        <label class="checkbox"><input type="checkbox" id="hobbie5" value="Reading books">Reading books</label>
+                    </div>
+                </div>
+        
+                <div class="field is-grouped">
+                    <div class="control"><button type="submit" class="button is-primary">Submit</button></div>
+                    <div class="control"><button class="button is-danger">Cancel</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+    $("#form").submit(function(e) {
+        e.preventDefault();
+        var info = {
+                firstname: $('input#firstname').val(),
+                lastname: $('input#laststname').val(),
+                contact_no: $('input#contact_no').val(),
+                D_O_B: $('input#dob').val(),
+                email: $('input#email').val(),
+                address: $('input#address').val(),
+                gender: $('input[name=gender]:checked').val(),
+                blood_group: $('select#bg').val(),
+                hobbies:{
+                    hobbie1: $('input#hobbie1:checked').val(),
+                    hobbie2: $('input#hobbie2:checked').val(),
+                    hobbie3: $('input#hobbie3:checked').val(),
+                    hobbie4: $('input#hobbie4:checked').val(),
+                    hobbie5: $('input#hobbie5:checked').val(),
+                }
+            };
+            alert("Thank You!!!");
+            console.log(info);
+        });
+    });
+</script>
+</html>

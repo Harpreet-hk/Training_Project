@@ -1,0 +1,1092 @@
+/* Main Declarations*/
+*, *:after, *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Body Declaration*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    color: #222;
+}
+
+/*Container Declaration*/
+/* .container{
+    width: auto;
+    max-width: 1920px;
+    height: auto;
+    background: white;
+    margin: auto;
+} */
+
+/*Starting of Header Section*/ 
+.header{
+    color: white;
+    display: block;
+    height: auto;
+    background-image: url("./../images/1.png");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header-top{
+    padding: 3%;
+}
+.header-container{
+    width: auto;
+    max-width: 1400px;
+    height: auto;
+    margin: auto;
+    padding: 4%;
+}
+.logo{
+    width: 48px;
+    height: 48px;
+}
+.app-name{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding-left: 17px;
+    vertical-align: top;
+}
+.header-menu-section{
+    float: right;
+    font-size: 15px;
+}
+.header-menu-section ul{
+    display: inline-block;
+    margin-top: 16px;
+}
+.header-menu-section ul li{
+    text-decoration: none;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header-menu-section ul li a:hover{
+    color: pink;
+}
+.header-menu-section ul li a{
+    text-decoration: none;
+    color: white;
+}
+.underline{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button a:hover{
+    color: pink;
+}
+button{
+    font-size: 12px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 1px #ffffff;
+    background-color: #72B9D2;
+    color: white;
+}
+.hero-section{
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 13%;
+}
+.tag{
+    font-size: 14px;
+    line-height: 2.29;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+}
+.quote{
+    font-size: 86px;
+    margin-top: 39px;
+    margin-bottom: 36px;
+    position: relative;
+    text-align: center;
+}
+h1{
+    font-size: 86px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: relative;
+    text-align: center;
+}
+.title{
+    background: #6e45e2;
+    height: auto;
+}
+.title:after{
+    clear: both;
+	content: " ";
+	display: block;
+}
+.tag-line{
+    font-size: 16px;
+}
+.downward-arrow{
+    border-radius: 50%;
+    background: white;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+}
+.fa-arrow-down{
+    color: #9fa4af;
+    height: 16px;
+    width: 14px;
+    position: absolute;
+    left: 26px;
+    top: 26px;
+}
+
+/*Starting of Benefit Section*/
+.benefit-section{
+    height: auto;
+    background-image: url("./../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 200px;
+    display: block;
+    background-position: top right;
+    padding-top: 14%;
+}
+.benefit-section-container{
+    width: auto;
+    max-width: 1400px;
+    height: auto;
+    margin: auto;
+}
+.graphic{
+  position: absolute;
+  width: 553px;
+  max-width: 100%;
+  height: auto;
+  top: 25%;
+  right: 20%;
+}
+.content-part{
+    padding-left: 7%;
+    width: 39%;
+}
+.features{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    line-height: 2.29;
+    color: #9fa4af;
+   
+  }
+  .status{
+      font-size: 60px;
+      font-weight: 500;
+      width: 397px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: -2.4px;
+      text-align: left;
+      color: #4f4f6f;
+  }
+  .data{
+    font-size: 16px;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9fa4af;
+    width: 421px;
+}
+.downward-arrow1{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 1%;
+    right: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 18.7px 2.3px rgba(204, 204, 223, 0.5);
+}
+
+/*Starting of what-we-believe Section*/
+.what-we-believe-section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+}
+.mobile-image{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+.content{
+    position: absolute;
+    float: right;
+    width: 28%;
+    top: 25%;
+    right: 19%
+}
+.get-started{
+    box-shadow: 0 0 18.7px 2.3px rgba(204, 204, 223, 0.5);
+    background-color: #ffffff;
+    border: solid 1px #d7dbe8;
+    font-size: 12px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    color: #c2c9db;
+}
+.get-started a{
+    color: #c2c9db;
+}
+.down-arrow{
+    border-radius: 50%;
+    background-color: #6e45e2;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+}
+
+/*Starting of Slider Section*/
+.slider-section{
+    width: 100%;
+    height: auto;
+    background-image: url("./../images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+}
+.slider-section-container{
+    width: auto;
+    max-width: 1700px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 120px;
+}
+.sub-section-heading{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    padding-bottom: 99px;
+}
+.highlight{
+    font-size: 60px;
+}
+.performance-box1{
+    width: 100%;
+    height: auto;
+    padding-left: 32px;
+}
+.fa{
+    width: 24%;
+    height: auto;
+    padding-left: 48px;
+    border-right: 1px solid rgba(235, 235, 235, 0.4);
+}
+.fa4{
+    width: 24%;
+    height: auto;
+    padding-left: 48px;
+    border-right: none;
+    display: inline-block;
+}
+.fa:nth-child(4) {
+    border-right: none;
+}
+.upward-arrow{
+    width: 61px;
+    height: 62px;
+    float: left;
+}
+.value{
+    float: left;
+    width: 68%;
+    padding-left: 42px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.icon-box{
+    font-size: 24px;
+}
+.description{
+    font-size: 16px;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.performance-box2{
+    padding-top: 97px;
+    padding-left: 32px;
+}
+.round-dots{
+    text-align: center;
+    padding-top: 70px;
+}
+.dot{
+    border-radius: 50%;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    opacity: 0.5;
+    padding-left: 4px;
+}
+.dot1{
+    border-radius: 50%;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    padding-left: 4px;
+}
+.sponsorship{
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-top: 5%;
+    mix-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.2);
+    display: inline-block;
+    padding-bottom: 5%;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 1400px;
+}
+.golden-grid{
+    padding-right: 5%;
+    object-fit: contain;
+    width: 224px;
+    height: 14px;
+}
+.ostrich-cafe{
+    padding-right: 5%;
+    max-width: 196px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.hover-logo-sweety{
+    padding-right: 5%;
+    max-width: 216px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.wall-paint-shop{
+    padding-right: 5%;
+    max-width: 162px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.ice-cream-bar{
+    padding-right: 5%;
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.frame{
+    padding-right: 5%;
+    max-width: 236px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Starting of Team member Section*/
+.team-member-section{
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+}
+.team-member-container{
+    width: auto;
+    max-width: 1600px;
+    height: auto;
+    margin: auto;
+}
+.team-member-section:after{
+    clear: both;
+    content: " ";
+    display: block;
+}
+.section-heading{
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    padding-bottom: 38px;
+    margin-bottom: 0px;
+    color: #9fa4af;
+}
+.highlight1{
+    font-size: 45px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: -2.4px;
+    text-align: center;
+    color: #4f4f6f;
+}
+.main-line{
+    font-size: 16px;
+    text-align: center;
+    color: #9fa4af;
+    margin-top: 0px;
+}
+.row1{
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+}
+.row1:after{
+    clear: both;
+    content: " ";
+    display: block;
+}
+.row{
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+}
+.row:after{
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+.team-member{
+    width: 25%;
+    height: auto;
+    float: left;
+    padding-left: 12px;
+    padding-bottom: 0px;
+}
+.team-member-pic{
+    max-width: 371px;
+    width: 100%;
+    height: auto;
+}
+.team-member-name{
+    text-align: center; 
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.88;
+    letter-spacing: 0.8px;
+    color: #9fa4af;
+    margin-bottom: 0px;
+}
+.team-member-designation{
+    text-align: center;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.7px;
+    color: #9fa4af;
+    margin-top: 5px;
+}
+
+/*Starting of Control data Section*/
+.control-data-section{
+    width: 100%;
+    height: auto;
+    background-image: url("./../images/16.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 207px;
+}
+.control-data-container{
+    width: auto;
+    max-width: 1400px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 157px;
+}
+.graphic-pic{
+    margin-left: auto;
+    max-width: 1545px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.tag-line1{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2.29;
+    letter-spacing: 0.7px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.convey{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -2.4px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
+.buttons{
+    text-align: center;
+}
+.button1{
+    width: 190px;
+    height: 50px;
+    border: 1px solid #6e45e2;
+    background-color: #6e45e2;
+}
+.button2{
+    width: 190px;
+    height: 50px;
+    background-color: #ffffff;
+    border: solid 1px #d7dbe8;
+    color: black;
+    font-weight: bold;
+}
+.button2 a{
+    color: #d7dbe8;
+}
+button{
+    font-size: 12px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 1px #ffffff;
+    background-color: #72B9D2;
+    color: white;
+}
+
+/* Starting of Footer Section*/
+.footer{
+    padding: 3.5%;
+    width: 100%;
+    height: auto;
+}
+.footer-menu-section{
+    float: right;
+    font-size: 15px;
+}
+.footer-menu-section ul{
+    display: inline-block;
+    margin-top: 16px;
+}
+.footer-menu-section ul li{
+    text-decoration: none;
+    display: inline;
+    padding-left: 26px;
+    padding-right: 43px;
+}
+.footer-menu-section ul li a:hover{
+    color: pink;
+}
+.footer-menu-section ul li a{
+    text-decoration: none;
+    color: #6a6a77;
+}
+.copyright{
+    float: left;
+    color: rgba(106, 106, 119, 0.5);
+    font-size: 14px;
+    line-height: 1.36;
+    font-weight: 500;
+}
+.footer-bottom{
+    width: 100%;
+    padding-top: 78px;
+}
+.social-networking-sites{
+    float: right;
+    color: rgba(106, 106, 119, 0.5);
+    font-size: 16px;
+    padding-right: 49px;
+}
+.fa-facebook-f, .fa-twitter, .fa-google-plus-g, .fa-instagram{
+    padding-left: 20px;
+}
+.fa-copyright:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+.fa-facebook-f:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+.fa-twitter:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+.fa-google-plus-g:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+.fa-instagram:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+
+/*For Screen width (768px - 1024px)*/
+@media screen and (max-width: 1024px) and (min-width: 768px)
+{
+    /*Header Section*/
+    .logo{
+        width: 40px;
+        height: 40px
+    }
+    .header-menu-section ul li{
+        padding-left: 7px;
+        padding-right: 3px;
+    }
+    .app-name{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .header-menu-section{
+        font-size: 12px;
+    }
+    button{
+        width: 118px;
+        height: 36px;
+        font-size: 10px;
+    }
+    h1{
+        font-size: 50px;
+        margin-top: 19px;
+        margin-bottom: 19px;
+    }
+
+    /*Benefit Section*/
+    .benefit-section{
+        padding-bottom: 12%;
+    }
+    .row1{
+        padding: 3%;
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+    .row{
+        padding: 3%;
+    }
+    .graphic{
+        width: 200px;
+        max-width: 100%;
+        right: 24%;
+        top: 24%;
+    }
+    .content-part{
+        width: 44%;
+    }
+    .features{
+        font-size: 10px;
+    }
+    .status{
+        font-size: 35px;
+    }
+    .data{
+        font-size: 10px;
+        width: 84%;
+    }
+    .get-started{
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+    }
+    .downward-arrow, .down-arrow{
+        width: 32px;
+        height: 32px;
+    }
+    .downward-arrow1{
+        bottom: 2%;
+        width: 32px;
+        height: 32px;
+    }
+    .fa-arrow-down{
+        left: 32%;
+        top: 33%;
+    }
+    .fa{
+        width: 48%;
+    }
+    .golden-grid, .ostrich-cafe, .hover-logo-sweety, .wall-paint-shop, .ice-cream-bar, .frame{
+        width: 100px;
+    }
+    .team-member-name, .team-member-designation{
+        font-size: 12px;
+    }
+    .team-member-container{
+        padding-bottom: 10px;
+    }
+    .what-we-believe-section{
+        padding-bottom: 100px;
+    }
+    .content{
+        width: 38%;
+        top: 15%;
+        right: 7%;
+    }
+    .highlight{
+        font-size: 45px;
+    }
+    .upward-arrow{
+        width: 35px;
+        height: 35px;
+    }
+    .value{
+        padding-left: 5%;
+    }
+    .icon-box{
+        font-size: 16px;
+    }
+    .description{
+        font-size: 10px;
+    }
+    .performance-box2{
+        padding-top: 5%;
+    }
+    .fa{
+        padding-left: 2%;
+    }
+    .fa:nth-child(2) {
+        border-right: none;
+    }
+    .icon-box{
+        font-size: 18px;
+    }
+    .description{
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 13px
+    }
+    .performance-box1, .performance-box2{
+        padding-left: 50px;
+    }
+    .mobile-image{
+        width: 55%;
+    }
+    .slider-section-container{
+        padding-bottom: 20px;
+    }
+    .convey{
+        font-size: 45px;
+    }
+    .graphic-pic{
+        max-width: 700px;
+    }
+    .footer{
+        padding: 3%;
+    }
+    .footer-menu-section{
+        font-size: 12px;
+    }
+    .footer-menu-section ul li{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .footer-bottom{
+        padding-top: 3%;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    .social-networking-sites{
+        font-size: 12px;
+        padding-right: 6px;
+    }
+    .sub-section-heading{
+        padding-bottom: 5%;
+    }
+    .sponsorship{
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+    .round-dots{
+        padding-top: 5%;
+        padding-bottom: 8%;
+    }
+}
+
+
+/*For Screen max-width 787px*/
+@media screen and (max-width: 767px)
+{
+    .logo{
+        height: 28px;
+        width: 28px;
+    }
+    .app-name{
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .header-menu-section{
+        font-size: 10px;
+    }
+    .header-menu-section ul{
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    .header-menu-section ul li{
+        padding-left: 1px;
+        padding-right: 13px;
+        font-size: 8px;
+    }
+    button{
+        font-size: 8px;
+        width: 84px;
+        height: 23px;
+        float: right;
+    }
+    .hero-section{
+        padding-top: 12%;
+    }
+    .tag{
+        font-size: 8px;
+    }
+    h1{
+        font-size: 33px;
+    }
+    .tag-line{
+        font-size: 8px;
+    }
+    .downward-arrow{
+        width: 20px;
+        height: 20px;
+    }
+    .fa-arrow-down{
+        top: 6px;
+        left: 4px;
+    }
+    .benefit-section{
+        background-position: center top;
+        padding-bottom: 7%;
+        padding-top: 30%;
+    }
+    .content{
+        width: 62%;
+        top: 10%;
+        right: 2%;
+    }
+    .features{
+        font-size: 8px;
+    }
+    .data{
+        font-size: 8px;
+        width: 90%;
+    }
+    .status{
+        font-size: 25px;
+    }
+    .graphic{
+        width: 135px;
+        top: 6%;
+        right: 27%;
+    }
+    button{
+        float: none;
+    }
+    .downward-arrow1{
+        width: 20px;
+        height: 20px;
+        bottom: 1%;
+        right: 50%;
+    }
+    .content-part{
+        padding-left: 11%;
+        width: 99%;
+    }
+    .down-arrow{
+        width: 20px;
+        height: 20px;
+    }
+    .get-started{
+        font-size: 8px;
+        width: 83px;
+        height: 23px;
+    }
+    .content{
+        width: 41%;
+        right: 1%;
+        top: 4%;
+    }
+    .content{
+        width: 90%;
+        top: 48%;
+        right: 4%;
+    }
+    .what-we-believe-section{
+        padding-bottom: 185px;
+    }
+    .mobile-image{
+        width: 100%;
+    }
+    .slider-section{
+        padding-top: 53px;
+    }
+    .slider-section-container{
+        padding-bottom: 35px;
+    }
+    .team-member-section{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .section-heading{
+        font-size: 8px;
+        padding-bottom: 2%;
+    }
+    .sub-section-heading{
+        font-size: 8px;
+        padding-bottom: 10%;
+    }
+    .upward-arrow{
+        width: 20px;
+        height: 20px;
+    }
+    .icon-box{
+        font-size: 12px;
+    }
+    .fa{
+        padding-left: 0px;
+        width: 48%;
+    }
+    .mobile-image{
+        width: 64%;
+    }
+    .value{
+        padding-left: 4%;
+    }
+    .description{
+        font-size: 8px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .performance-box2{
+        padding-top: 5%;
+    }
+    .round-dots{
+        padding-top: 5%;
+    }
+    .dot, .dot1{
+        width: 5px;
+        height: 5px;
+    }
+    .fa:nth-child(2) {
+        border-right: none;
+    }
+    .highlight{
+        font-size: 25px;
+    }
+    .golden-grid, .ostrich-cafe, .hover-logo-sweety, .wall-paint-shop, .ice-cream-bar, .frame{
+        width: 50px;
+    }
+    .container{
+        padding-left: 18px;
+    }
+    .sponsorship{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .team-member{
+        width: 49%;
+    }
+    .team-member-name{
+        font-size: 8px;
+    }
+    .team-member-designation{
+        font-size: 8px;
+        margin-top: 0px;
+    }
+    .highlight1{
+        font-size: 30px;
+    }
+    .main-line{
+        font-size: 8px;
+    }
+    .tag-line1{
+        font-size: 8px;
+    }
+    .convey{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .button1{
+        width: 83px;
+        height: 23px;
+    }
+    .button2{
+        width: 97px;
+        height: 23px;
+    }
+    .graphic-pic{
+        max-width: 325px;
+    }
+    .control-data-section{
+        padding-top: 40px;
+    }
+    .control-data-container{
+        padding-bottom: 60px;
+    }
+    .footer{
+        padding-top: 3%;
+    }
+    .footer-menu-section{
+        font-size: 8px;
+        float: none;
+    }
+    .footer-menu-section ul{
+        padding-left: 9px;
+        margin-top: 0px;
+    }
+    .footer-menu-section ul li{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .copyright{
+        font-size: 7px;
+    }
+    .social-networking-sites{
+        padding-right: 5px;
+        font-size: 8px;
+    }
+    .fa-facebook-f, .fa-twitter, .fa-google-plus-g, .fa-instagram{
+        padding-left: 5px;
+        font-size: 8px;
+    }
+    .footer-bottom{
+        padding-top: 10px;
+    }
+}
+
