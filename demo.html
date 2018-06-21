@@ -9,14 +9,22 @@
         .columns{
             background-color: rgb(245, 216, 204);
             width: 40%;
+            height: 600px;
             margin: 0 auto;
-            margin-top: 10px;
+            margin-top: 30px;
         }
         .x{
             display: inline-flex;
         }
         .label{
             padding-right: 10px;
+        }
+        h3{
+            padding-bottom: 20px;
+            font-size: 25px;
+        }
+        .field{
+            padding-bottom: 15px;
         }
     </style>
 </head>
@@ -27,16 +35,16 @@
             <form action="demo.php" method="POST">
 
                 <div class="x field">
+                    <label class="label">ID</label>
+                    <div class="control"><input name="id" class="input" type="text" required placeholder="Text input"></div>
+                </div>
+                <div class="x field">
                     <label class="label">Firstname</label>
                     <div class="control"><input name="firstname" class="input" type="text" required placeholder="Text input"></div>
                 </div>
                 <div class="x field">
                     <label class="label">Lastname</label>
                     <div class="control"><input name="lastname" class="input" type="text" required placeholder="Text input"></div>
-                </div>
-                <div class="x field">
-                    <label class="label">Contact No.</label>
-                    <div class="control"><input name="contactNo" class="input" type="tel" maxlength="10" required placeholder="Enter Contact No"></div>
                 </div>
                 <div class="x field">
                     <label class="label">Date of Birth</label>
@@ -47,10 +55,9 @@
                     <div class="control"><input name="email" class="input" type="email" required placeholder="Email input"></div>
                 </div>
                 <div class="x field">
-                    <label class="label">Address</label>
-                    <div class="control"><input name="address" class="input" type="text" required placeholder="Address input"></div>
+                    <label class="label">Contact No.</label>
+                    <div class="control"><input name="contactNo" class="input" type="tel" maxlength="10" required placeholder="Enter Contact No"></div>
                 </div>
-
                 <div class="field">
                         <label class="label">Gender</label>
                         <div class="control">
@@ -59,27 +66,16 @@
                             <label class="radio"><input id="gender_others" type="radio" value="Other" name="gender">Others</label>
                         </div>
                 </div>
-
-                <div class="field">
-                        <label class="label">Blood Group</label>
-                        <select name="bg" required>
-                                <option>--Select Blood Group--</option>
-                                <option>AB+</option>
-                                <option>AB-</option>
-                                <option>A+</option>
-                                <option>A-</option>
-                                <option>B+</option>
-                                <option>B-</option>
-                                <option>O+</option>
-                                <option>O-</option>
-                            </select>
-                </div>
                 <div class="field is-grouped">
                     <div class="control"><button type="submit" class="button is-primary">Submit</button></div>
-                    <div class="control"><button class="button is-danger">Cancel</button></div>
+                    <div class="control"><button class="button is-danger" type="submit" formaction="php_table.php">View Records</button></div>
                 </div>
             </form>
         </div>
     </div>
 </body>
 </html>
+
+
+
+
