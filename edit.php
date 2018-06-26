@@ -1,30 +1,3 @@
-<?php
-$conn = new mysqli("localhost", "root", "root","php_form");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$ID = $_POST['ID'];
-//var_dump($_POST);
-$sql = "SELECT * FROM form_info WHERE ID='$ID';";
-$result = $conn->query($sql);
-$person = $result->fetch_assoc();
-
-if (isset ($_POST['ID'])) {
-  $FullName = $person['FullName'];
-  $D_O_B = $person['D_O_B'];
-  $Email = $person['Email'];
-  $ContactNo = $person['ContactNo'];
-  $Gender = $person['Gender'];
-  $sql = 'UPDATE form_info SET FullName=:FullName, D_O_B=:D_O_B, Email=:Email, ContactNo=:ContactNo, Gender=:Gender WHERE ID="$ID"';
-  $statement = $conn->query($sql);
-  var_dump($statement);
-  //if ($statement->execute([ ':ID' => $ID, ':FullName' => $FullName, ':D_O_B' => $D_O_B, ':Email' => $Email, ':ContactNo' => $ContactNo, //':Gender' => $Gender])) {
-    //header("Location:php_table.php");
-  //}
-} 
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,12 +16,12 @@ if (isset ($_POST['ID'])) {
         .x{
             display: inline-flex;
         }
-        .label{
-            padding-right: 10px;
+        .label{ID
+            padID
         }
         h3{
-            padding-bottom: 20px;
-            font-size: 25px;
+            padID
+            fonID
         }
         .field{
             padding-bottom: 15px;
@@ -61,13 +34,39 @@ if (isset ($_POST['ID'])) {
             <h3 class="has-text-centered has-text-weight-bold">Update FORM</h3>
             <form action="php_table.php" method="POST">
 
+                <?php
+                    $conn = new mysqli("localhost", "root", "root","php_form");
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+                    if (isset($_POST["back"])) {
+                        header("Location:emp_details.php");
+                    }
+                    $ID = $_POST['ID'];
+                    if (isset ($_POST['ID'])) {
+    
+                        $ID = $_POST['ID'];
+                        $FullName = $_POST['FullName'];
+                        $D_O_B = $_POST['D_O_B'];
+                        $Email = $_POST['Email'];
+                        $ContactNo = $_POST['ContactNo'];
+                        $Gender = $_POST['Gender'];
+                    
+                        echo $sql = 'UPDATE form_info SET FullName=$FullName, D_O_B=$D_O_B, Email=$Email, ContactNo=$ContactNo, Gender=$Gender WHERE ID="$ID"';
+                      $statement = $conn->query($sql);
+                    } 
+                    $sql = "SELECT * FROM form_info WHERE ID='$ID';";
+                    $result = $conn->query($sql);
+                    $person = $result->fetch_assoc();
+                ?>
+
                 <div class="x field">
                     <label class="label">Firstname</label>
-                    <div class="control"><input value="<?= $FullName; ?>" name="firstname" class="input" type="text" required placeholder="Text input"></div>
+                    <div class="control"><input value="<?php echo $person['ID']; ?>" name="firstname" class="input" type="text" required placeholder="Text input"></div>
                 </div>
                 <div class="x field">
                     <label class="label">Lastname</label>
-                    <div class="control"><input value="<?= $FullName; ?>" name="lastname" class="input" type="text" required placeholder="Text input"></div>
+                    <div class="control"><input value="<?php echo $person['FullName']; ?>" name="lastname" class="input" type="text" required placeholder="Text input"></div>
                 </div>
                 <div class="x field">
                     <label class="label">Date of Birth</label>
@@ -89,6 +88,8 @@ if (isset ($_POST['ID'])) {
                             <label class="radio"><input value="<?= $Gender; ?>" id="gender_others" type="radio" name="gender">Others</label>
                         </div>
                 </div>
+                <input type="hidden" name="user_id" value="<?= $ID; ?>">
+
                 <div class="field is-grouped">
                     <div class="control"><button type="submit" class="button is-primary">Update</button></div>
                 </div>

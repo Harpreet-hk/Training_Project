@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +30,7 @@
     </style>
 </head>
 <body>
+
     <div class="columns is-mobile">
         <div class="column">
             <h3 class="has-text-centered has-text-weight-bold">FORM</h3>
@@ -75,7 +77,4 @@
     </div>
 </body>
 </html>
-
-
-
 
